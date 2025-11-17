@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lsbArbol = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbNivel = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -62,13 +61,14 @@
             this.tbOrigen = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.tvArbol = new System.Windows.Forms.TreeView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lsbArbol);
+            this.groupBox1.Controls.Add(this.tvArbol);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.tbNivel);
             this.groupBox1.Controls.Add(this.btnBuscar);
@@ -86,15 +86,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Arbol Organizativo";
-            // 
-            // lsbArbol
-            // 
-            this.lsbArbol.FormattingEnabled = true;
-            this.lsbArbol.ItemHeight = 16;
-            this.lsbArbol.Location = new System.Drawing.Point(9, 217);
-            this.lsbArbol.Name = "lsbArbol";
-            this.lsbArbol.Size = new System.Drawing.Size(397, 324);
-            this.lsbArbol.TabIndex = 11;
             // 
             // label3
             // 
@@ -391,6 +382,13 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Origen:";
             // 
+            // tvArbol
+            // 
+            this.tvArbol.Location = new System.Drawing.Point(9, 217);
+            this.tvArbol.Name = "tvArbol";
+            this.tvArbol.Size = new System.Drawing.Size(403, 324);
+            this.tvArbol.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -411,7 +409,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox lsbArbol;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbNivel;
         private System.Windows.Forms.Button btnBuscar;
@@ -444,6 +441,7 @@
         private System.Windows.Forms.TextBox tbNombreEdificio;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnAgregarEdificio;
+        private System.Windows.Forms.TreeView tvArbol;
     }
 }
 

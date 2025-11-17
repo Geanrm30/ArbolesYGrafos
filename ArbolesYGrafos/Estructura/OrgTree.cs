@@ -126,32 +126,5 @@ namespace ArbolesYGrafos
             // Nodo no encontrado en este subárbol
             return -1;
         }
-
-        /// <summary>
-        /// Realiza un recorrido en preorden del árbol con formato jerárquico
-        /// Mostrando los nodos con sangrías según su nivel
-        /// </summary>
-        /// <param name="actual">Nodo actual en el recorrido</param>
-        /// <param name="nivel">Nivel actual del nodo (0 para raíz)</param>
-        /// <returns>Lista de strings con la representación jerárquica del árbol</returns>
-        public List<string> PreOrdenJerarquico(TreeNode actual, int nivel = 0)
-        {
-            List<string> lista = new List<string>();
-
-            // Crear sangría según el nivel (3 espacios por nivel)
-            string indentacion = new string(' ', nivel * 3);
-
-            // Agregar el nodo actual con su sangría correspondiente
-            lista.Add(indentacion + actual.Nombre);
-
-            // Recorrer recursivamente todos los hijos
-            foreach (var hijo in actual.Hijos)
-            {
-                // Agregar los hijos con nivel incrementado
-                lista.AddRange(PreOrdenJerarquico(hijo, nivel + 1));
-            }
-
-            return lista;
-        }
     }
 }
