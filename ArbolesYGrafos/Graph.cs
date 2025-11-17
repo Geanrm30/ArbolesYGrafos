@@ -124,5 +124,14 @@ namespace ArbolesYGrafos
 
             return new DijkstraResult(ruta, dist[fin]);
         }
+        public List<string> ObtenerTodosLosNodos()
+        {
+            return new List<string>(Ady.Keys);
+        }
+
+        public bool ExisteNodo(string nombre)
+        {
+            return Ady.ContainsKey(nombre);
+        }
     }
 }
