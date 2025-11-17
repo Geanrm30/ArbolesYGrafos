@@ -42,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnAgregarEdificio = new System.Windows.Forms.Button();
             this.tbNombreEdificio = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tbRuta = new System.Windows.Forms.Button();
@@ -61,7 +62,6 @@
             this.tbOrigen = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnAgregarEdificio = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -220,9 +220,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Grafo";
             // 
+            // btnAgregarEdificio
+            // 
+            this.btnAgregarEdificio.Location = new System.Drawing.Point(268, 21);
+            this.btnAgregarEdificio.Name = "btnAgregarEdificio";
+            this.btnAgregarEdificio.Size = new System.Drawing.Size(157, 31);
+            this.btnAgregarEdificio.TabIndex = 24;
+            this.btnAgregarEdificio.Text = "Agregar Edificio";
+            this.btnAgregarEdificio.UseVisualStyleBackColor = true;
+            this.btnAgregarEdificio.Click += new System.EventHandler(this.btnAgregarEdificio_Click);
+            // 
             // tbNombreEdificio
             // 
-            this.tbNombreEdificio.Location = new System.Drawing.Point(118, 28);
+            this.tbNombreEdificio.Location = new System.Drawing.Point(118, 21);
             this.tbNombreEdificio.Name = "tbNombreEdificio";
             this.tbNombreEdificio.Size = new System.Drawing.Size(144, 22);
             this.tbNombreEdificio.TabIndex = 23;
@@ -230,7 +240,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 28);
+            this.label10.Location = new System.Drawing.Point(6, 21);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(106, 16);
             this.label10.TabIndex = 22;
@@ -380,16 +390,6 @@
             this.label4.Size = new System.Drawing.Size(50, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "Origen:";
-            // 
-            // btnAgregarEdificio
-            // 
-            this.btnAgregarEdificio.Location = new System.Drawing.Point(268, 21);
-            this.btnAgregarEdificio.Name = "btnAgregarEdificio";
-            this.btnAgregarEdificio.Size = new System.Drawing.Size(157, 31);
-            this.btnAgregarEdificio.TabIndex = 24;
-            this.btnAgregarEdificio.Text = "Agregar Edificio";
-            this.btnAgregarEdificio.UseVisualStyleBackColor = true;
-            this.btnAgregarEdificio.Click += new System.EventHandler(this.btnAgregarEdificio_Click);
             // 
             // Form1
             // 
